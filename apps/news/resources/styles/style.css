@@ -1,5 +1,6 @@
-body {
+.sc-main {
     font-size: 1.1em !important;
+    background: #FFF !important;
 }
 
 .article-title {
