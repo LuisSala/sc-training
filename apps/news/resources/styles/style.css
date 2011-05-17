@@ -1,0 +1,11 @@
+body {
+    font-size: 1.1em !important;
+}
+
+.article-title {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.article-byline {
+    color: #ccc;
+}

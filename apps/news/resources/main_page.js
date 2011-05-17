@@ -14,14 +14,23 @@ News.mainPage = SC.Page.design({
     childViews: 'scrollView'.w(),
     
     scrollView: SC.ScrollView.design({
+          hasVerticalScroller: YES,
           contentView: SC.TemplateView.extend({
-                templateName: 'articlelist',
-                layerId: 'articlelist'
+              templateName: 'articlelist',
+              layerId: 'articlelist',
+
+              init: function() {
+                  sc_super();
+                  this.invokeLast(function() {
+                      this.notifyPropertyChange("frame");
+                  });
+              } //end init()
           })
     }) // end scrollView
   }) // end MainPane
 
 }); // end mainPage
+
 
 News.ArticleListView = SC.TemplateCollectionView.extend({
     contentBinding: 'News.articlesController'

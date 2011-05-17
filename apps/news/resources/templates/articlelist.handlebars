@@ -1,5 +1,9 @@
 Welcome to my News App
 
 {{#collection News.ArticleListView class="article-list" itemclass="article-item" }}
-    <b>{{content.title}}</b> - {{content.author}}
+    <h1 class="item-title">{{content.title}}</h1>
+    <p class="item-byline">{{content.author}} - {{content.publishedDate}}</p>
+    <div class="item-description">
+        {{content.description}}
+    </div>
 {{/collection}}
