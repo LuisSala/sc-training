@@ -47,10 +47,13 @@ News.MoreButtonView = SC.TemplateView.extend({
     },
 
     mouseUp: function(evt){
-       SC.Logger.log("Content clicked: "+this.getPath("content.title"));
-        News.panelController.set("content", this.get("content"));
-        News.panelController.openPanel();
-        return YES;
+       // SC.Logger.log("Content clicked: "+this.getPath("content.title"));
+       //  News.panelController.set("content", this.get("content"));
+       //  return YES;
+
+      News.panelController.set('content', this.get('content'));
+      News.statechart.sendAction('showPanel');
+      return YES;
     }, // end mouseDown
 
     touchStart: function(touch) {

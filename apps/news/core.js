@@ -24,3 +24,45 @@ News = SC.Application.create(
   store: SC.Store.create({commitRecordsAutomatically: YES}).from('News.FeedDataSource')
 
 }) ;
+
+News.Statechart = SC.Object.extend(SC.StatechartManager, {
+  trace: true,
+
+  rootState: SC.State.design({
+    initialSubstate: 'empty',
+
+    empty: SC.State.design({
+      enterState: function() {
+        this.gotoState('loading');
+      }
+    }),
+
+    loading: SC.State.design({
+      showPanel: function() {
+        News.panelController.openPanel();
+      }
+    }),
+
+    loaded: SC.State.design({
+
+    }),
+
+    error: SC.State.design({
+
+    }),
+
+    no_data: SC.State.design({
+
+    }),
+
+    prompt: SC.State.design({
+
+    })
+  })
+});
+
+News.statechart = News.Statechart.create();
+News.statechart.initStatechart();
+
+
+
