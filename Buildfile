@@ -10,3 +10,5 @@ config :all, :required => :sproutcore
 
 # In addition to this Buildfile, which gives settings for your entire project,
 # each of your apps has its own Buildfile with settings specific to that app.
+
+proxy '/feed', :to => 'pipes.yahoo.com', :url => '/pipes/pipe.run'

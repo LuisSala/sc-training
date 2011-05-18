@@ -11,6 +11,10 @@
     color: #ccc;
 }
 
+.article-body {
+    background: #fff;
+}
+
 .item-more {
     background: #62aee1;
     color: #fff;

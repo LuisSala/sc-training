@@ -16,7 +16,7 @@ News.main = function main() {
 
   News.getPath('mainPage.mainPane').append() ;
 
-  News.articlesController.set("content",News.store.find(News.Article));
+  News.articlesController.set("content",News.store.find(News.ARTICLE_QUERY));
 
 
 

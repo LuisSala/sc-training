@@ -13,10 +13,21 @@
 News.panelController = SC.ObjectController.create(
 /** @scope News.panelController.prototype */ {
 
-  openPanel: function() {
+    panel: null,
+
+    openPanel: function() {
       SC.Logger.log("Opening panel for: "+this.getPath("content.title"));
 
-      var panel = News.ArticlePanel.create().append();
-  }
+      var panel =  News.ArticlePanel.create().append();
+
+      this.set("panel", panel);
+    },
+
+    closePanel: function(){
+      SC.Logger.log("Closing panel");
+
+      var panel = this.get("panel");
+      panel.remove();
+    }
 
 }) ;
