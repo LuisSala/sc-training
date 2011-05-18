@@ -35,3 +35,75 @@ News.mainPage = SC.Page.design({
 News.ArticleListView = SC.TemplateCollectionView.extend({
     contentBinding: 'News.articlesController'
 }); // end ArticleListView
+
+News.MoreButtonView = SC.TemplateView.extend({
+    // Using a dot (.) in the content binding path
+    // references the local (this) scope as opposed
+    // to the global scope.
+    contentBinding: ".parentView.content",
+
+    mouseDown: function(evt) {
+        return YES;
+    },
+
+    mouseUp: function(evt){
+       SC.Logger.log("Content clicked: "+this.getPath("content.title"));
+        News.panelController.set("content", this.get("content"));
+        News.panelController.openPanel();
+        return YES;
+    }, // end mouseDown
+
+    touchStart: function(touch) {
+        return this.mouseDown(touch);
+    },
+
+    touchEnd: function(touch) {
+        return this.mouseUp(touch);
+    }
+}); // end MoreButtonView
+
+News.ArticlePanel = SC.PanelPane.extend({
+    layout: { width: 400, height: 200, centerX: 0, centerY: 0 },
+    contentView: SC.View.extend({
+
+        childViews: "topToolbar articleView".w(),
+
+        topToolbar: SC.ToolbarView.design({
+            layout: { top: 0, height: 40, left: 0, right: 0 },
+            childViews: "close titleLabel".w(),
+            close: SC.ButtonView.design({
+              layout: { right: 7, centerY: 0, height: 24, width: 100 },
+              title: "Close" /*,
+              action: "closeItem" */
+            }), // end close
+
+            titleLabel: SC.LabelView.design({
+                  layout: { centerY: 0, height: 24, left: 7, width:700},
+                  controlSize: SC.LARGE_CONTROL_SIZE,
+                  fontWeight: SC.BOLD_WEIGHT,
+                  value: "Not Set",
+                  init: function(){
+                    sc_super();
+                    var self = this;
+                    //self.set("value", self.getPath("pane.content.title"));
+
+                  }
+            }) // end titleLabel
+
+
+        }),
+
+        articleView: SC.ScrollView.extend({
+              contentView: SC.TemplateView.create({
+                  init: function() {
+                      sc_super();
+                      var self = this;
+                      this.set("template", function(){
+                         return self.getPath("pane.content.body");
+                        });
+                  } // end init()
+              }) // end contentView
+        }) // end articleView
+    }) // end contentView
+
+}); // end ArticlePanel

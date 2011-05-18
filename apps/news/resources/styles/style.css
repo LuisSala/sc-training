@@ -10,3 +10,15 @@
 .article-byline {
     color: #ccc;
 }
+
+.item-more {
+    background: #62aee1;
+    color: #fff;
+    font-weight: bold !important;
+    width: 70px;
+    float: right;
+    text-align: center;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+}
