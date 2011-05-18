@@ -16,7 +16,7 @@ News.panelController = SC.ObjectController.create(
   openPanel: function() {
       SC.Logger.log("Opening panel for: "+this.getPath("content.title"));
 
-      var panel = News.ArticlePanel.create().set("content", this.get("content")).append();
+      var panel = News.ArticlePanel.create().append();
   }
 
 }) ;

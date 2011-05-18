@@ -81,28 +81,23 @@ News.ArticlePanel = SC.PanelPane.extend({
                   layout: { centerY: 0, height: 24, left: 7, width:700},
                   controlSize: SC.LARGE_CONTROL_SIZE,
                   fontWeight: SC.BOLD_WEIGHT,
-                  value: "Not Set",
-                  init: function(){
-                    sc_super();
-                    var self = this;
-                    //self.set("value", self.getPath("pane.content.title"));
-
-                  }
+                  valueBinding: "News.panelController.content.title"
             }) // end titleLabel
 
 
         }),
 
         articleView: SC.ScrollView.extend({
-              contentView: SC.TemplateView.create({
+            layout: {top:40},
+            contentView: SC.TemplateView.create({
                   init: function() {
                       sc_super();
                       var self = this;
                       this.set("template", function(){
-                         return self.getPath("pane.content.body");
+                         return News.panelController.getPath("content.body");
                         });
                   } // end init()
-              }) // end contentView
+            }) // end contentView
         }) // end articleView
     }) // end contentView
 
