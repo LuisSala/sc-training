@@ -14,7 +14,7 @@ News.Article.FIXTURES = [
         author: "Luis Sala",
         description: "This is an article about something interesting",
         publishedDate: "5/17/2011",
-        body: "This is the body of the article."
+        body: "Qui de toto super, con se inviar angloromanic. Gymnasios immediatemente il nos, nos in libera americas unidirectional. Peano preparation lo del. Durante preparation unidirectional con ha, nostre promotores demonstrate nos e. Via ultra studio complete un."
     },
     {
         guid: 2,
@@ -23,7 +23,7 @@ News.Article.FIXTURES = [
         author: "Luis Sala",
         description: "This is an article about something interesting",
         publishedDate: "5/17/2011",
-        body: "This is the body of the article."
+        body: "Qui de toto super, con se inviar angloromanic. Gymnasios immediatemente il nos, nos in libera americas unidirectional. Peano preparation lo del. Durante preparation unidirectional con ha, nostre promotores demonstrate nos e. Via ultra studio complete un."
     },
     {
         guid: 3,
@@ -32,7 +32,7 @@ News.Article.FIXTURES = [
         author: "Luis Sala",
         description: "This is an article about something interesting",
         publishedDate: "5/17/2011",
-        body: "This is the body of the article."
+        body: "Qui de toto super, con se inviar angloromanic. Gymnasios immediatemente il nos, nos in libera americas unidirectional. Peano preparation lo del. Durante preparation unidirectional con ha, nostre promotores demonstrate nos e. Via ultra studio complete un."
     },
     {
         guid: 4,
@@ -41,7 +41,7 @@ News.Article.FIXTURES = [
         author: "Luis Sala",
         description: "This is an article about something interesting",
         publishedDate: "5/17/2011",
-        body: "This is the body of the article."
+        body: "Qui de toto super, con se inviar angloromanic. Gymnasios immediatemente il nos, nos in libera americas unidirectional. Peano preparation lo del. Durante preparation unidirectional con ha, nostre promotores demonstrate nos e. Via ultra studio complete un."
     },
     {
         guid: 5,
@@ -50,7 +50,7 @@ News.Article.FIXTURES = [
         author: "Luis Sala",
         description: "This is an article about something interesting",
         publishedDate: "5/17/2011",
-        body: "This is the body of the article."
+        body: "Qui de toto super, con se inviar angloromanic. Gymnasios immediatemente il nos, nos in libera americas unidirectional. Peano preparation lo del. Durante preparation unidirectional con ha, nostre promotores demonstrate nos e. Via ultra studio complete un."
     },
     {
         guid: 6,
@@ -59,7 +59,7 @@ News.Article.FIXTURES = [
         author: "Luis Sala",
         description: "This is an article about something interesting",
         publishedDate: "5/17/2011",
-        body: "This is the body of the article."
+        body: "Qui de toto super, con se inviar angloromanic. Gymnasios immediatemente il nos, nos in libera americas unidirectional. Peano preparation lo del. Durante preparation unidirectional con ha, nostre promotores demonstrate nos e. Via ultra studio complete un."
     },
         {
         guid: 7,
@@ -67,7 +67,7 @@ News.Article.FIXTURES = [
         author: "Luis Sala",
         description: "This is an article about something interesting",
         publishedDate: "5/17/2011",
-        body: "This is the body of the article."
+        body: "Qui de toto super, con se inviar angloromanic. Gymnasios immediatemente il nos, nos in libera americas unidirectional. Peano preparation lo del. Durante preparation unidirectional con ha, nostre promotores demonstrate nos e. Via ultra studio complete un."
     },
     {
         guid: 8,
@@ -76,7 +76,7 @@ News.Article.FIXTURES = [
         author: "Luis Sala",
         description: "This is an article about something interesting",
         publishedDate: "5/17/2011",
-        body: "This is the body of the article."
+        body: "Qui de toto super, con se inviar angloromanic. Gymnasios immediatemente il nos, nos in libera americas unidirectional. Peano preparation lo del. Durante preparation unidirectional con ha, nostre promotores demonstrate nos e. Via ultra studio complete un."
     },
     {
         guid: 9,
@@ -85,7 +85,7 @@ News.Article.FIXTURES = [
         author: "Luis Sala",
         description: "This is an article about something interesting",
         publishedDate: "5/17/2011",
-        body: "This is the body of the article."
+        body: "Qui de toto super, con se inviar angloromanic. Gymnasios immediatemente il nos, nos in libera americas unidirectional. Peano preparation lo del. Durante preparation unidirectional con ha, nostre promotores demonstrate nos e. Via ultra studio complete un."
     },
     {
         guid: 10,
@@ -94,7 +94,7 @@ News.Article.FIXTURES = [
         author: "Luis Sala",
         description: "This is an article about something interesting",
         publishedDate: "5/17/2011",
-        body: "This is the body of the article."
+        body: "Qui de toto super, con se inviar angloromanic. Gymnasios immediatemente il nos, nos in libera americas unidirectional. Peano preparation lo del. Durante preparation unidirectional con ha, nostre promotores demonstrate nos e. Via ultra studio complete un."
     },
     {
         guid: 11,
@@ -103,7 +103,7 @@ News.Article.FIXTURES = [
         author: "Luis Sala",
         description: "This is an article about something interesting",
         publishedDate: "5/17/2011",
-        body: "This is the body of the article."
+        body: "Qui de toto super, con se inviar angloromanic. Gymnasios immediatemente il nos, nos in libera americas unidirectional. Peano preparation lo del. Durante preparation unidirectional con ha, nostre promotores demonstrate nos e. Via ultra studio complete un."
     },
     {
         guid: 12,
@@ -112,7 +112,7 @@ News.Article.FIXTURES = [
         author: "Luis Sala",
         description: "This is an article about something interesting",
         publishedDate: "5/17/2011",
-        body: "This is the body of the article."
+        body: "Qui de toto super, con se inviar angloromanic. Gymnasios immediatemente il nos, nos in libera americas unidirectional. Peano preparation lo del. Durante preparation unidirectional con ha, nostre promotores demonstrate nos e. Via ultra studio complete un."
     },
         {
         guid: 13,
@@ -120,7 +120,7 @@ News.Article.FIXTURES = [
         author: "Luis Sala",
         description: "This is an article about something interesting",
         publishedDate: "5/17/2011",
-        body: "This is the body of the article."
+        body: "Qui de toto super, con se inviar angloromanic. Gymnasios immediatemente il nos, nos in libera americas unidirectional. Peano preparation lo del. Durante preparation unidirectional con ha, nostre promotores demonstrate nos e. Via ultra studio complete un."
     },
     {
         guid: 14,
@@ -129,7 +129,7 @@ News.Article.FIXTURES = [
         author: "Luis Sala",
         description: "This is an article about something interesting",
         publishedDate: "5/17/2011",
-        body: "This is the body of the article."
+        body: "Qui de toto super, con se inviar angloromanic. Gymnasios immediatemente il nos, nos in libera americas unidirectional. Peano preparation lo del. Durante preparation unidirectional con ha, nostre promotores demonstrate nos e. Via ultra studio complete un."
     },
     {
         guid: 15,
@@ -138,7 +138,7 @@ News.Article.FIXTURES = [
         author: "Luis Sala",
         description: "This is an article about something interesting",
         publishedDate: "5/17/2011",
-        body: "This is the body of the article."
+        body: "Qui de toto super, con se inviar angloromanic. Gymnasios immediatemente il nos, nos in libera americas unidirectional. Peano preparation lo del. Durante preparation unidirectional con ha, nostre promotores demonstrate nos e. Via ultra studio complete un."
     },
     {
         guid: 16,
@@ -147,7 +147,7 @@ News.Article.FIXTURES = [
         author: "Luis Sala",
         description: "This is an article about something interesting",
         publishedDate: "5/17/2011",
-        body: "This is the body of the article."
+        body: "Qui de toto super, con se inviar angloromanic. Gymnasios immediatemente il nos, nos in libera americas unidirectional. Peano preparation lo del. Durante preparation unidirectional con ha, nostre promotores demonstrate nos e. Via ultra studio complete un."
     },
     {
         guid: 17,
@@ -156,7 +156,7 @@ News.Article.FIXTURES = [
         author: "Luis Sala",
         description: "This is an article about something interesting",
         publishedDate: "5/17/2011",
-        body: "This is the body of the article."
+        body: "Qui de toto super, con se inviar angloromanic. Gymnasios immediatemente il nos, nos in libera americas unidirectional. Peano preparation lo del. Durante preparation unidirectional con ha, nostre promotores demonstrate nos e. Via ultra studio complete un."
     },
     {
         guid: 18,
@@ -165,6 +165,6 @@ News.Article.FIXTURES = [
         author: "Luis Sala",
         description: "This is an article about something interesting",
         publishedDate: "5/17/2011",
-        body: "This is the body of the article."
+        body: "Qui de toto super, con se inviar angloromanic. Gymnasios immediatemente il nos, nos in libera americas unidirectional. Peano preparation lo del. Durante preparation unidirectional con ha, nostre promotores demonstrate nos e. Via ultra studio complete un."
     }
 ];
