@@ -12,10 +12,15 @@
 // See comments for some pointers on what to do next.
 //
 News.main = function main() {
-
-
+  /*
+  // Example of optimizing for specific devices
+  if (SC.browser.isiPhone) {
+      News.getPath('mainPage.touchPane').append();
+  } else {
+      News.getPath('mainPage.mainPane').append() ;
+  }
+  */
   News.getPath('mainPage.mainPane').append() ;
-
   News.articlesController.set("content",News.store.find(News.ARTICLE_QUERY));
 
 
