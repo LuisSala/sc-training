@@ -28,7 +28,7 @@ News.FeedDataSource = SC.DataSource.extend(
     // TODO: Add handlers to fetch data for specific queries.  
     // call store.dataSourceDidFetchQuery(query) when done.
 
-    var url = "/feed?_id=cfe79b93ed2e40b787f985c48c28826e&_render=json&url="+ encodeURI(query.query);
+    var url = "/_strobe/proxy/pipes.yahoo.com/pipes/pipe.run?_id=cfe79b93ed2e40b787f985c48c28826e&_render=json&url="+ encodeURI(query.query);
     SC.Request.getUrl(url).header({'Accept':'application/json'}).json().notify(this, 'didFetchFeed', store, query).send();
 
     return YES ; // return YES if you handled the query
