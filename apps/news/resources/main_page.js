@@ -4,6 +4,8 @@
 // ==========================================================================
 /*globals News */
 
+sc_require('views/article_list');
+
 // This page describes the main user interface for your application.  
 News.mainPage = SC.Page.design({
 
@@ -12,29 +14,14 @@ News.mainPage = SC.Page.design({
   // load.
   mainPane: SC.MainPane.design({
     childViews: 'scrollView'.w(),
-    
-    scrollView: SC.ScrollView.design({
-          hasVerticalScroller: YES,
-          contentView: SC.TemplateView.extend({
-              templateName: 'articlelist',
-              layerId: 'articlelist',
 
-              init: function() {
-                  sc_super();
-                  this.invokeLast(function() {
-                      this.notifyPropertyChange("frame");
-                  });
-              } //end init()
-          })
+    scrollView: SC.ScrollView.design({
+      hasVerticalScroller: YES,
+      contentView: News.ArticleListView
     }) // end scrollView
   }) // end MainPane
 
 }); // end mainPage
-
-
-News.ArticleListView = SC.TemplateCollectionView.extend({
-    contentBinding: 'News.articlesController'
-}); // end ArticleListView
 
 News.MoreButtonView = SC.TemplateView.extend({
     // Using a dot (.) in the content binding path
@@ -42,19 +29,6 @@ News.MoreButtonView = SC.TemplateView.extend({
     // to the global scope.
     contentBinding: ".parentView.content",
 
-    mouseDown: function(evt) {
-        return YES;
-    },
-
-    mouseUp: function(evt){
-       // SC.Logger.log("Content clicked: "+this.getPath("content.title"));
-       //  News.panelController.set("content", this.get("content"));
-       //  return YES;
-
-      News.panelController.set('content', this.get('content'));
-      News.statechart.sendAction('showPanel');
-      return YES;
-    }, // end mouseDown
 
     touchStart: function(touch) {
         return this.mouseDown(touch);
