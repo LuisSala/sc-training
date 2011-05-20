@@ -1,18 +1,38 @@
 .sc-main {
-    font-size: 1.1em !important;
+    font-size: 0.96em !important;
     background: #FFF !important;
+}
+.sc-collection-item {
+    border-style: solid !important;
+    border-color: #888 !important;
+    border-bottom-width: 1px !important;
+    border-right-width: 1px !important;
+}
+
+.article{
+    margin:8px !important;
 }
 
 .article-title {
     font-size: 1.3em;
     font-weight: bold;
 }
+
+h1.article-title-grid {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
 .article-byline {
     color: #ccc;
 }
 
 .article-body {
     background: #fff;
+}
+
+.article-description {
+    font-size: 1em;
 }
 
 .item-more {
@@ -22,7 +42,8 @@
     width: 70px;
     float: right;
     text-align: center;
-    margin-top: 4px;
-    margin-bottom: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
     border: 1px solid black;
+    margin-right:10px;
 }
